@@ -53,6 +53,7 @@ function loadPastSamplesAndDrawChart() {
                         display: false,
                     },
                     responsive: true,
+                    aspectRatio: 1.5,
                     title: {
                         display: true,
                         text: '배민커넥터 수'
