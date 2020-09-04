@@ -1,0 +1,29 @@
+{
+  "name": "connector-counter",
+  "version": "1.0.0",
+  "description": "How many connectors are there?.",
+  "main": "bin/www",
+  "scripts": {
+    "start": "node -r esm bin/www",
+    "test": "node -r esm tests/CountRepository.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potados99/connector-counter.git"
+  },
+  "author": "potados ",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/potados99/connector-counter/issues"
+  },
+  "homepage": "https://github.com/potados99/connector-counter#readme",
+  "dependencies": {
+    "@hapi/basic": "^6.0.0",
+    "@hapi/boom": "^9.1.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "async-redis": "^1.1.7",
+    "esm": "^3.2.25",
+    "request": "^2.88.2"
+  }
+}

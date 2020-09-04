@@ -1,0 +1,11 @@
+#!/usr/bin/env node -r esm
+
+import createServer from '../app';
+
+async function start() {
+    const server = await createServer();
+
+    await server.start();
+}
+
+start();
