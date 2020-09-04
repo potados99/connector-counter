@@ -14,5 +14,13 @@ async function getSamples_shouldReturnSomethingAfterAdd() {
     console.log(result);
 }
 
-getCurrentCount_shouldReturnSomethingAfterSet();
-getSamples_shouldReturnSomethingAfterAdd();
+async function findNearest_test() {
+    const col = [10, 9, 6, 5, 4, 3, 2, 1];
+
+    console.log(countRepo._findNearest(col, 10));
+}
+
+// getCurrentCount_shouldReturnSomethingAfterSet();
+// getSamples_shouldReturnSomethingAfterAdd();
+
+findNearest_test();
