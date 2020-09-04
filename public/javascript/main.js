@@ -9,17 +9,21 @@ window.onload = () => {
 function loadCurrentCount() {
     fetch("/current").then(response => {
         response.json().then(body => {
-            document.getElementById("count").innerText = body.count;
+            document.getElementById("count").innerText = _numberWithCommas(body.count);
             document.getElementById("updated").innerText = new Date(Number.parseInt(body.timestamp)).toLocaleString();
         })
     });
+}
+
+function _numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function loadDiff() {
     fetch("/diff").then(response => {
         response.json().then(body => {
             if (body.diff) {
-                document.getElementById("diff").innerText = ((body.diff > 0) ? "+" : "") + body.diff;
+                document.getElementById("diff").innerText = ((body.diff > 0) ? "+" : "") + _numberWithCommas(body.diff);
             }
         })
     })
