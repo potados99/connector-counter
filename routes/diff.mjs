@@ -1,13 +1,13 @@
 import countRepo from '../lib/singleton/countRepo';
 
 export default {
-    name: 'past',
+    name: 'diff',
     register: async (server) => {
         server.route({
             method: 'GET',
-            path: '/past',
+            path: '/diff',
             handler: async (request, h) => {
-                return await countRepo.getSamples();
+                return await countRepo.getDiffFromYesterday();
             },
         });
     },

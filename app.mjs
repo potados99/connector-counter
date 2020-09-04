@@ -21,6 +21,7 @@ async function registerPlugins(server) {
         ((await import('./routes/public')).default),
         ((await import('./routes/current')).default),
         ((await import('./routes/past')).default),
+        ((await import('./routes/diff')).default),
     ]);
 }
 

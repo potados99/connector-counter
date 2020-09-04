@@ -1,10 +1,12 @@
 #!/usr/bin/env node -r esm
 
 import createServer from '../app';
+import registerSchedule from '../lib/update';
 
 async function start() {
-    const server = await createServer();
+    registerSchedule();
 
+    const server = await createServer();
     await server.start();
 }
 

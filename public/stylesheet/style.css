@@ -1,0 +1,26 @@
+html {
+    margin: auto;
+    font-family: "BM Hanna", sans-serif;
+    font-size: 120%;
+}
+
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    margin-top: 45px;
+}
+
+.big-accent-text {
+    font-size: 500%;
+}
+
+@font-face {
+    font-family: "BM Hanna";
+    src: url("https://www.woowahan.com/fonts/BMHANNA_11yrs_otf.otf") format("embedded-opentype"), url("https://www.woowahan.com/fonts/BMHANNA_11yrs_ttf.ttf") format("truetype"), url("https://www.woowahan.com/fonts/BMHANNA_11yrs.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
