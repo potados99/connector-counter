@@ -71,6 +71,13 @@ function loadPastSamplesAndDrawChart() {
                         xAxes: [{
                             type: 'time',
                             display: true,
+                            time: {
+                                tooltipFormat: 'YYYY/MM/DD HH:mm',
+                                displayFormats: {
+                                    'day': 'MM/DD',
+                                    'month': 'YYYY/MM',
+                                },
+                            },
                             scaleLabel: {
                                 display: true,
                             },
