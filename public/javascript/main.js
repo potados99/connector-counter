@@ -1,5 +1,9 @@
 'use strict';
 
+window.odometerOptions = {
+    duration: 120,
+};
+
 window.onload = () => {
     loadCurrentCount();
     loadDiff();
@@ -23,7 +27,8 @@ function loadDiff() {
     fetch("/diff").then(response => {
         response.json().then(body => {
             if (body.diff) {
-                document.getElementById("diff").innerText = ((body.diff > 0) ? "+" : "") + _numberWithCommas(body.diff);
+                document.getElementById("sign").innerText = ((body.diff >= 0) ? "+" : "-")
+                document.getElementById("diff").innerText = _numberWithCommas(Math.abs(body.diff));
             }
         })
     })
@@ -92,3 +97,4 @@ function loadPastSamplesAndDrawChart() {
         })
     });
 }
+

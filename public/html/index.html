@@ -3,10 +3,13 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link type="text/css" href="/public/stylesheet/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/public/stylesheet/odometer-theme-default.css" />
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
         <script src="/public/javascript/main.js" type="application/javascript"></script>
+        <script src="/public/javascript/odometer.min.js"></script>
 
         <title>배민커넥트 통계</title>
     </head>
@@ -15,10 +18,13 @@
 
         <div class="section">
             <p>현재 '배민커넥트' 카카오톡 채널 친구 수</p>
-            <span class="big-accent-text" id="count">-</span><span>명</span>
+            <span class="big-accent-text odometer" id="count">0</span>
+            <span>명</span>
 
             <p>어제보다</p>
-            <span class="big-accent-text" id="diff">-</span><span>명</span>
+            <span class="big-accent-text" id="sign">+</span>
+            <span class="big-accent-text odometer" id="diff">-\0</span>
+            <span>명</span>
 
             <p>
                 <span>마지막 업데이트: </span><span class="small-text" id="updated">-</span>

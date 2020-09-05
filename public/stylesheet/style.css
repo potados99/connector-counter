@@ -12,11 +12,12 @@ body {
 
 .section {
     margin: auto;
-    padding-top: 45px;
+    padding-top: 30px;
     max-width: 750px;
 }
 
 .big-accent-text {
+    font-family: "BM Hanna", sans-serif;
     font-size: 500%;
 }
 
