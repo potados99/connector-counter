@@ -1,7 +1,7 @@
 html {
     margin: auto;
     font-family: "BM Hanna", sans-serif;
-    font-size: 120%;
+    font-size: 130%;
 }
 
 body {
@@ -12,13 +12,13 @@ body {
 
 .section {
     margin: auto;
-    padding-top: 30px;
+    padding-top: 25px;
     max-width: 750px;
 }
 
 .big-accent-text {
     font-family: "BM Hanna", sans-serif;
-    font-size: 500%;
+    font-size: 400%;
 }
 
 @font-face {

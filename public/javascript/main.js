@@ -14,7 +14,7 @@ function loadCurrentCount() {
     fetch("/current").then(response => {
         response.json().then(body => {
             document.getElementById("count").innerText = _numberWithCommas(body.count);
-            document.getElementById("updated").innerText = new Date(Number.parseInt(body.timestamp)).toLocaleString();
+            document.getElementById("updated").innerText = `(${new Date(Number.parseInt(body.timestamp)).toLocaleString()} 기준)`;
         })
     });
 }
