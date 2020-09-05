@@ -87,7 +87,7 @@ function loadPastSamplesAndDrawChart() {
                                     fontStyle: 'bold',
                                 },
                                 autoSkip: true,
-                                autoSkipPadding: 75,
+                                autoSkipPadding: 50,
                                 maxRotation: 0,
                             }
                         }],
