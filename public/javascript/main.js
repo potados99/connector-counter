@@ -55,6 +55,7 @@ function loadPastSamplesAndDrawChart() {
                         borderColor: "#2ac1bc",
                         fill: false,
                         data: data,
+                        pointRadius: 0,
                     }]
                 },
                 options: {
@@ -64,8 +65,7 @@ function loadPastSamplesAndDrawChart() {
                     responsive: true,
                     aspectRatio: 1.5,
                     title: {
-                        display: true,
-                        text: '배민커넥터 수'
+                        display: false,
                     },
                     scales: {
                         xAxes: [{
@@ -76,18 +76,27 @@ function loadPastSamplesAndDrawChart() {
                             },
                             ticks: {
                                 major: {
+                                    enabled: true,
                                     fontStyle: 'bold',
-                                    fontColor: '#FF0000'
-                                }
+                                },
+                                autoSkip: true,
+                                autoSkipPadding: 75,
+                                maxRotation: 0,
                             }
                         }],
                         yAxes: [{
                             display: true,
-                            scaleLabel: {
-                                display: true,
-                            }
                         }]
-                    }
+                    },
+                    tooltips: {
+                        intersect: false,
+                        mode: 'index',
+                        callbacks: {
+                            label: (tooltipItem, myData) => {
+                                return _numberWithCommas(tooltipItem.value) + '명';
+                            }
+                        }
+                    },
                 }
             };
 
