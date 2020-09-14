@@ -2,7 +2,7 @@
 
 활동중인 배민커넥터가 몇 명이나 있을까
 
-<a href="https://bc.potados.net">
+<a href="http://bc.potados.net">
 <img src="/docs/bc-screenshot.png"/>
 </a>
 
