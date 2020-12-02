@@ -5,7 +5,7 @@
   "main": "bin/www",
   "scripts": {
     "start": "node -r esm bin/www",
-    "test": "node -r esm tests/CountRepository.test.mjs"
+    "test": "node -r esm tests/WoowaRepository.test.mjs"
   },
   "repository": {
     "type": "git",
